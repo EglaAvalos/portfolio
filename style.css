@@ -48,3 +48,126 @@ nav{
     color: #9d87bb;
     text-shadow: 0 0 10px #4800ad ;
 }
+.hamburg,
+.cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 14px;
+    top: 10px;
+    color: white;
+    opacity: 0;
+}
+.references{
+    display: flex;
+}
+.references a{
+    position: relative;
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.4s linear;
+}
+.references a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #220e3d;
+    transition: 0.3s linear;
+}
+.references a:hover::before{
+    width: 100%;
+}
+.references a:hover{
+    color: #6f00ff;
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: blur(5px) brightness(40%);
+    box-shadow: 0 0 20px black;
+    transition: 0.3s linear;
+}
+.dropdown.references a{
+    display: flex;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.3s;
+}
+.dropdown.references a:hover{
+    background-color: #6f00ff;
+}
+
+
+section{
+    width: 100%;
+    min-height: 90vh;
+}
+section .main-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 0 20px;
+}
+
+.main-container .image{
+    width: 500px;
+    height: 90vh;
+    border-radius: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 50px #694f8d;
+    transition: transform 1.5s ease-in-out;
+}
+.main-container .image img{
+    width: 100%;
+}
+.main-container .image:hover{
+    animation: animate 1.5s ease-in-out infinite;
+}
+@keyframes animate{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.main-container .content{
+    color: white;
+    width: 40%;
+}
+.content h1{
+    font-size: clamp(1rem, 1rem + 5vw,1.8rem);
+}
+.content h1 span{
+    color: #acacac;
+    text-shadow: 0 0 10px #8c00ff ;
+}
+.content .typewritter{
+    font-size: clamp(1rem, 1rem + 5vw,2.5rem);
+    font-weight: 600;
+}
+.content .typewritter-text{
+    color: #acacac;
+    text-shadow: 0 0 10px #6f00ff;
+}
+.content p{
+    font-size: clamp(0.5rem, 0.3rem + 9vw,1rem);
+    margin: 10px 0;
+}
