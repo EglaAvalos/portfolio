@@ -52,7 +52,7 @@ nav{
 .cancel{
     cursor: pointer;
     position: absolute;
-    right: 14px;
+    right: 12px;
     top: 10px;
     color: white;
     opacity: 0;
@@ -96,7 +96,7 @@ nav{
     box-shadow: 0 0 20px black;
     transition: 0.3s linear;
 }
-.dropdown.references a{
+.dropdown .references a{
     display: flex;
     color: white;
     text-decoration: none;
@@ -105,7 +105,7 @@ nav{
     align-items: center;
     transition: 0.3s;
 }
-.dropdown.references a:hover{
+.dropdown .references a:hover{
     background-color: #6f00ff;
 }
 
@@ -170,4 +170,52 @@ section .main-container{
 .content p{
     font-size: clamp(0.5rem, 0.3rem + 9vw,1rem);
     margin: 10px 0;
+}
+.contact-links a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #8c00ff;
+    border-radius: 50%;
+    color: #540099;
+    margin: 5px 15px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+    text-decoration: none;
+}
+.contact-links a:hover{
+   scale: 1.3;
+    color: #000000;
+    background-color: #540099;
+    filter: drop-shadow(0 0 10px #8c50db);
+}
+.contact-links i{
+    background: none;
+    padding: 0;
+    border-radius: 50%;
+}
+.content button{
+    width: 50%;
+    height: 6vh;
+    margin: 30px;
+    background-color: #8c50db;
+    color: #acacac;
+    border: none;
+    outline: none;
+    font-size: 120%;
+    font-weight: 700;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s linear;
+}
+.content button:hover{
+    scale: 1.1;
+    color: #6f00ff;
+    border: 2px solid #6f00ff;
+    background-color: transparent;
+    font-weight: 700;
+    box-shadow: 0 0 40px #6f00ff;
 }
